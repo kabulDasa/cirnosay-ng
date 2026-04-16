@@ -1,0 +1,13 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cirnosay"
+version = "0.1.0"
+description = "cowsay with ANSI true-color image avatars"
+requires-python = ">=3.9"
+dependencies = ["Pillow>=10.0"]
+
+[project.scripts]
+cirnosay = "cirnosay.__main__:main"
