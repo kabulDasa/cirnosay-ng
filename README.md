@@ -6,6 +6,11 @@ Renders an arbitrary image file as ANSI true-color half-block art alongside a sp
 
 A spiritual successor to [cirnosay](https://github.com/yuzurufag/cirnosay).
 
+![cirnosay demo — feelsgoodman in full ANSI true-color block mode](demo.png)
+
+<details>
+<summary>ASCII fallback (for terminals without color support)</summary>
+
 ```
 $ cirnosay -i fgm.png -m ascii "feelsgoodman"
 
@@ -29,7 +34,7 @@ $ cirnosay -i fgm.png -m ascii "feelsgoodman"
                            .....
 ```
 
-*(True-color block mode renders in full color in the terminal. ASCII mode shown here for README compatibility.)*
+</details>
 
 ## Requirements
 
