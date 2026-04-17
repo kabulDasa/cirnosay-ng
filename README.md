@@ -45,8 +45,10 @@ $ cirnosay -i fgm.png -m ascii "feelsgoodman"
 
 ```bash
 cd cirnosay-ng
-python -m venv .venv
-source .venv/bin/activate      # Windows: .venv\Scripts\activate
+rm -rf .venv                        # remove any stale venv (e.g. from a previous location)
+python3 -m venv .venv               # Windows: py -3 -m venv .venv
+source .venv/bin/activate           # Windows: .venv\Scripts\activate
+pip install --upgrade pip
 pip install -e .
 ```
 
